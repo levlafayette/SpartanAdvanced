@@ -9,7 +9,7 @@
 
 -- *Slide* --
 ### Part 0: Slide Repository
-* A copy of the slides and sample code is available at: `https://github.com/UoM-ResPlat-DevOps/SpartanAdvanced`
+* A copy of the slides and sample code is available at: `https://github.com/levlafayette/SpartanAdvanced`
 * The introductory course teaches you the shell environment and HPC job submission. This course introduces you to how to process faster.
 -- *Slide End* --
 
@@ -71,7 +71,7 @@
 
 -- *Slide* --
 ### Part 1: Redirections and Tee
-* Process streams as well as data streams can be redirected: `diff <(ssh user@spartan.hpc.unimelb.edu.au ls -R (~/Desktop/data/) <(ls -R /home/lev/data/)`
+* Process streams as well as data streams can be redirected: `diff <(ssh lev@spartan.hpc.unimelb.edu.au ls -R /home/lev/data) <(ls -R ~/Desktop/data)`
 -- *Slide End* --
 
 -- *Slide* --
