@@ -519,7 +519,7 @@ http://sed.sourceforge.net/sed1line.txt
 -- *Slide* --
 ### Part 3: Special Characters
 * Examples: 
-`echo 'The "Sedimentary" and the "Igenuous" argue about metamorphism'`   
+`echo 'The "Sedimentary" and the "Igneous" argue about metamorphism'`   
 `echo "There are $(ls | wc -l) files in $(pwd)"`
 -- *Slide End* --
 
