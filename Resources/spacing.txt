@@ -1,0 +1,26 @@
+Spacing in shell scripts is important!
+
+$ UPDATE_STATUS=0
+$ if [[ ${UPDATE_STATUS}=1 ]]; then echo Why does this work; fi
+
+What's wrong with spaces in filenames?
+
+$ touch "This is a long file name"
+$ for item in $(ls ./*); do echo ${item}; done
+
+Command line arguments are separated by whitespace, unless the arguments are quoted. When passing arguments to data that is separated by spaces it 
+will treat the data as separate fields.
+
+One way around this is to change the Internal Field Separator in the shell script. For example, before loop construct, setting a newline as the 
+delimiter instead.
+
+$ mkdir test; cd test
+$ touch "This is a long file name"
+$ cat ifs.sh
+#!/bin/bash
+IFS=$'\n'
+for item in $(ls ./*)
+	do echo ${item}
+done
+unset IFS
+exit 0

@@ -540,7 +540,7 @@ Aliases, Shell functions, Shell builtins, Files
 
 -- *Slide* --
 ### Part 3: Scripts with Loops cont...
-* Examples of these scripts are in  `/usr/local/common/AdvLinux/loops.txt`
+* Examples of these scripts are in  `/usr/local/common/AdvLinux/loops.txt`. See also `/usr/local/common/AdLinux/spacing.txt`
 * These can be converted to permanent scripts e.g., `/usr/local/common/AdvLinux/lowercaserename.sh` and `/usr/local/common/AdvLinux/sshtrigger.sh`
 -- *Slide End* --
 
