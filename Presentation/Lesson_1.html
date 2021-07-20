@@ -111,7 +111,7 @@
 </script></section>
 <section data-markdown><script type="text/template">
 ### Part 1: Redirections and Tee cont..
-* Redirections can be further modified by placing a file descriptor (fd) next immediately before the redirector. These fd numbers are 0 (standard input), 1 (standard output), 2 (standard error). e.g., `ls -d seismic 2> error.txt`
+* Redirections can be further modified by placing a file descriptor (fd) next immediately before the redirector. These fd numbers are 0 (standard input, keyboard), 1 (standard output, display), 2 (standard error, display). e.g., `ls -d seismic 2> error.txt`
 * Standard error can also to be redirected to the same destination that standard output is directed to using 2>&1; it merges stderr (2) into stdout (1).
 </script></section>
 <section data-markdown><script type="text/template">
@@ -417,6 +417,12 @@ http://sed.sourceforge.net/sed1line.txt
 ### Part 3: Example extended .bash_profile
 * A sample extended `.bash_profile` is available from the directory `/usr/local/common/AdvLinuxshells`
 * Includes alias, history size modifications, functions etc.
+</script></section>
+<section data-markdown><script type="text/template">
+### Part 3: Command Taxonomy
+* The `type` command will define what sort of command is being used:
+Aliases, Shell functions, Shell builtins, Files
+* If you lose your $PATH this could cause problems!
 </script></section>
 <section data-markdown><script type="text/template">
 ### Part 3: Various Shells
